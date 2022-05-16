@@ -7,9 +7,7 @@
   box-sizing: border-box;
 }
 
-html{
-  font-size: 0,625rem;
-}
+
 
 body {
   background: rgb(104, 104, 104);
@@ -25,10 +23,10 @@ body {
   margin: 0 2rem;
   overflow: hidden;
   background-color: #ddd;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-  -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+  -o-box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .5);
 }
 
 .slider > input {
@@ -86,6 +84,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .round{
@@ -118,4 +117,12 @@ input#slide3:checked ~ .footer > .titles > .title__text{
 input#slide4:checked ~ .slider__main > .slides,
 input#slide4:checked ~ .footer > .titles > .title__text{
   transform: translateX(-300%);
+}
+
+@media (max-width: 76.8rem){
+  .footer{
+      flex-direction: column-reverse;
+      align-items:center;
+      padding-top: 1rem;
+  }
 }
