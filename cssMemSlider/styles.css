@@ -57,7 +57,7 @@ body {
   object-fit: cover;
 }
 
-.slider__footer{
+.footer{
   display: flex;
   align-items: center;
 }
@@ -76,7 +76,6 @@ body {
 }
 
 .controls{
-  margin-right: 2rem;
   display: flex;
 }
 
@@ -89,9 +88,33 @@ body {
 }
 
 .round{
-  background-color: black;
+  background-color: rgb(15, 52, 119);
   width: 1.5rem;
   height: 1.5rem;
-  border-radius: 50%;
-  
+  border-radius: 50%;  
+}
+
+input#slide1:checked ~ .footer > .controls > label[for="slide1"] > .round,
+input#slide2:checked ~ .footer > .controls > label[for="slide2"] > .round,
+input#slide3:checked ~ .footer > .controls > label[for="slide3"] > .round,
+input#slide4:checked ~ .footer > .controls > label[for="slide4"] > .round {
+  background-color: white;
+  border: 0.1rem rgb(15, 52, 119) solid;
+}
+
+input#slide1:checked ~ .slider__main > .slides,
+input#slide1:checked ~ .footer > .titles > .title__text{
+  transform: translateX(0);
+}
+input#slide2:checked ~ .slider__main > .slides,
+input#slide2:checked ~.footer > .titles > .title__text{
+  transform: translateX(-100%);
+}
+input#slide3:checked ~ .slider__main > .slides,
+input#slide1:checked ~ .footer > .titles > .title__text{
+  transform: translateX(-200%);
+}
+input#slide4:checked ~ .slider__main > .slides,
+input#slide1:checked ~ .footer > .titles > .title__text{
+  transform: translateX(-300%);
 }
