@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body {
+  background: rgb(104, 104, 104);
+}
+
+.wrapper {
+  height: 100%;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+.slider {
+  overflow: hidden;
+  background-color: #ddd;
+  /* height: inherit;
+  width: inherit; */
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.slider > input {
+  display: none;
+}
+
+.slider__main {
+  width: 400%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slides {
+  height: inherit;
+  width: inherit;
+}
+
+.slides > img{
+  height: 100%;
+  width: 100%;
+  /* width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available; */
+  object-fit: cover;
+}
+
+.slider__footer{
+  display: flex;
+  align-items: center;
+}
+
+.titles{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+}
+.title__text{
+  padding: 1rem;
+  width: 100%;
+  flex-shrink: 0;
+  font-size: 1.6rem;
+}
+
+.controls{
+  margin-right: 2rem;
+  display: flex;
+}
+
+.control__button{
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round{
+  background-color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  
+}
